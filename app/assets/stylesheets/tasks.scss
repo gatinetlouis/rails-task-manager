@@ -1,3 +1,22 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding: 20px;
+}
+
+.new_task {
+  padding: 10px;
+  width: 400px;
+
+}
+
+// .item {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// input {
+//   flex-grow: 1;
+//   margin-left: 10px;
+// }

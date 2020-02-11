@@ -1,0 +1,31 @@
+<h1>Edit here</h1>
+
+<div class='container d-flex justify-content-center'>
+ <%= form_for(@task) do |f| %>
+   <div class= 'form-group'>
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+   </div>
+  <div class= 'form-group'>
+    <%= f.label :details %>
+    <%= f.text_field :details, class: 'form-control' %>
+  </div>
+  <div class= 'form-group'>
+    <%= f.check_box :completed %>
+    <%= f.label :completed %>
+  </div>
+  <div class="form-group">
+  <%= f.submit class: 'btn btn-primary'%>
+  </div>
+  <div class="form-group">
+  <%=  link_to tasks_path do  %>
+    <i class="fas fa-undo mr-2"></i>Back to the list
+  <% end %>
+  </div>
+<% end %>
+</div>
+
+<!-- remodify the form
+pre filled by the info
+add complete or not
+redirect to the specific task -->

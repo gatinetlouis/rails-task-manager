@@ -1,11 +1,16 @@
 <h1><%= @task.title %></h1>
+<h5>
+  <%= link_to edit_path do %>
+    <i class="fas fa-edit mr-2"></i>Edit here
+  <% end %>
+</h5>
 <div>
   <p><%= @task.details %></p>
 </div>
 <div>
   <p> <% if @task.completed %>
         <input type="checkbox" id="<%= @task.id %>" checked>
-        <%= 'This tasks is completed'  %>
+        <%= 'This task is completed'  %>
       <% else %>
       <input type="checkbox" id="<%= @task.id %>">
         <%= 'This task is not completed yet' %>
